@@ -1,5 +1,7 @@
 # Dependencies for Video Encoding
-apt-get install libavcodec-dev libavformat-dev libavutil-dev libswscale-dev libavresample-dev libdc1394-22-dev
+apt-get install -y libavcodec-dev libavformat-dev libavutil-dev libswscale-dev libavresample-dev libdc1394-22-dev
+apt-get install -y ffmpeg pkg-config 
+apt-get install -y unzip wget cmake g++ openjdk-11-jdk ant python
 
 # Optional Custom OpenCV path
 -D CMAKE_PREFIX_PATH=/usr/local/Cellar/ffmpeg@5/5.1.3/
