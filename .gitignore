@@ -4,3 +4,4 @@
 # Log file
 *.log
 /bin/
+**/.DS_Store
