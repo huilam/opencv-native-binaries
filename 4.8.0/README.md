@@ -10,9 +10,11 @@ apt-get install -y unzip wget cmake g++ openjdk-11-jdk ant python
 -D CMAKE_PREFIX_PATH=/usr/local/Cellar/ffmpeg@5/5.1.3/
 
 # Optional Java Build Environment
-export JAVA_HOME=\`/usr/libexec/java_home -v 11\`
 
-export ANT_HOME=\`which ant\`/../../
+export JAVA_HOME=\`readlink -f $(which java) | sed "s:/bin/java::"\`
+
+export ANT_HOME=\`readlink -f $(which ant) | sed "s:/bin/ant::"\`
+
 
 # Opencv 4.8.0
 cmake -D CMAKE_BUILD_TYPE=RELEASE -D BUILD_SHARED_LIBS=OFF -D BUILD_ZLIB=OFF -D CMAKE_INSTALL_PREFIX=/usr/local -D BUILD_LIST=core,java,imgcodec,video,videoio,feature2d,flann,calib3d,dnn,objdetect ..
