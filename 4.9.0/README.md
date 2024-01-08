@@ -31,5 +31,6 @@ cmake \
 -D OPENCV_JAVA_TARGET_VERSION=11 \
 -D WITH_GSTREAMER=ON \
 -D WITH_FFMPEG=ON \
--D OPENCV_DNN_CUDA=ON \
+-D WITH_CUDA=ON \
+-D WITH_CUDNN=ON \
 -D BUILD_LIST=core,java,imgcodec,video,videoio,feature2d,flann,calib3d,objdetect,dnn,dnn_superres,dnn_objdetect,superres,face,text,cudev .. 
