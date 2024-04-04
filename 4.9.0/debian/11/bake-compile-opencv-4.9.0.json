@@ -1,0 +1,21 @@
+{
+  "variable": {
+    "release": {
+      "default": "latest"
+    },
+    "opencv_ver": {
+      "default": "4.9.0"
+    }
+  },
+  "group": {
+    "default": {
+      "targets": ["compile"]
+    }
+  },
+  "target": {
+    "compile": {
+      "dockerfile": "compile-opencv-${opencv_ver}.dockerfile",
+      "tags": ["opencv-${opencv_ver}-compile:${release}"]
+    }
+  }
+}
