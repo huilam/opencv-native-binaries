@@ -1,6 +1,6 @@
 # Build Dependencies 
-- Debian & Ubuntu 
-- MacOS
+- [Debian & Ubuntu](./dep-debian.md)
+- [MacOS](./dep-macos.md)
 
 # Opencv 4.9.0
 cmake \
