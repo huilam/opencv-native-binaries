@@ -6,6 +6,7 @@ install homebrew from https://brew.sh/
 brew install wget curl unzip
 brew install cmake pkg-config python3
 brew install ant openjdk
+brew install libdc1394
 
 # Optional OpenVINO
 brew install openvino

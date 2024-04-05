@@ -64,7 +64,7 @@ RUN cd ${opencv_dir}/opencv-${opencv_ver}/build && \
     -D WITH_CUDA=ON \
     -D WITH_CUDNN=ON \
     -D WITH_OPENVINO=ON \
-    -D BUILD_LIST=core,imgcodec,java,video,videoio,feature2d,flann,calib3d,objdetect,dnn,dnn_superres,dnn_objdetect,superres,face,text,cudev .. | tee cmake-output.txt
+    -D BUILD_LIST=core,imgcodec,java,video,videoio,gapi,feature2d,flann,calib3d,objdetect,dnn,dnn_superres,dnn_objdetect,superres,face,text,cudev .. | tee cmake-output.txt
 
 RUN cd ${opencv_dir}/opencv-${opencv_ver}/build && \
     make -j 4 | tee make-output.txt && \ 
@@ -95,7 +95,7 @@ RUN cd ${opencv_dir}/opencv-${opencv_ver}/build && \
     -D WITH_CUDA=ON \
     -D WITH_CUDNN=ON \
     -D WITH_OPENVINO=ON \
-    -D BUILD_LIST=core,imgcodec,java,video,videoio,feature2d,flann,calib3d,objdetect,dnn,dnn_superres,dnn_objdetect,superres,face,text,cudev .. | tee cmake-output.txt
+    -D BUILD_LIST=core,imgcodec,java,video,videoio,gapi,feature2d,flann,calib3d,objdetect,dnn,dnn_superres,dnn_objdetect,superres,face,text,cudev .. | tee cmake-output.txt
 
 RUN cd ${opencv_dir}/opencv-${opencv_ver}/build && \
     make -j 4 | tee make-output.txt && \
@@ -126,7 +126,7 @@ RUN cd ${opencv_dir}/opencv-${opencv_ver}/build && \
     -D WITH_CUDA=ON \
     -D WITH_CUDNN=ON \
     -D WITH_OPENVINO=ON \
-    -D BUILD_LIST=core,imgcodec,java,video,videoio,feature2d,flann,calib3d,objdetect,dnn,dnn_superres,dnn_objdetect,superres,face,text,cudev .. | tee cmake-output.txt
+    -D BUILD_LIST=core,imgcodec,java,video,videoio,gapi,feature2d,flann,calib3d,objdetect,dnn,dnn_superres,dnn_objdetect,superres,face,text,cudev .. | tee cmake-output.txt
 
 RUN cd ${opencv_dir}/opencv-${opencv_ver}/build && \
     make -j 4 | tee make-output.txt && \
