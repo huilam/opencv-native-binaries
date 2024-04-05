@@ -1,11 +1,14 @@
 # for MACOS
 
-# install homebrew from https://brew.sh/
+install homebrew from https://brew.sh/
 
 # Build dependencies 
 brew install wget curl unzip
 brew install cmake pkg-config python3
 brew install ant openjdk
+
+# Optional OpenVINO
+brew install openvino
 
 # Optional FFMpeg 
 brew install ffmpeg
