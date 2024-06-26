@@ -8,6 +8,8 @@ brew install wget curl unzip cmake pkg-config python3 ant openjdk libdc1394
 # Optional OpenVINO
 brew install openvino
 
+export OPENVINO_HOME=/opt/intel/openvino_xxx
+
 # Optional FFMpeg 
 brew install ffmpeg
 
