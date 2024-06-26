@@ -15,4 +15,7 @@ cmake \
 -D WITH_GSTREAMER=ON \
 -D WITH_CUDA=ON \
 -D WITH_CUDNN=ON \
+-D WITH_INF_ENGINE=ON \
+-D InferenceEngine_DIR=$OPENVINO_HOME/runtime/cmake \
+-D ngraph_DIR=$OPENVINO_HOME/runtime/cmake \
 -D BUILD_LIST=core,java,imgcodec,video,videoio,feature2d,flann,calib3d,objdetect,dnn,dnn_superres,dnn_objdetect,superres,face,text,cudev .. 
