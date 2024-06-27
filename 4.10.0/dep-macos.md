@@ -19,4 +19,4 @@ brew install gstreamer <br>
 # Java Build Environment
 export JAVA_HOME=\`/usr/libexec/java_home -v 11\` <br>
 export ANT_HOME=\`readlink -f $(which ant) | sed "s:/bin/ant::"\` <br>
-export PATH=$PATH:$ANT_HOME/bin:$JAVA_HOME/bin <br>
+export PATH=$JAVA_HOME/bin:$ANT_HOME/bin:$PATH <br>
