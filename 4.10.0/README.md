@@ -16,4 +16,4 @@ cmake \\\
 -D WITH_CUDA=ON \\\
 -D WITH_CUDNN=ON \\\
 -D WITH_OPENVINO=ON \\\
--D BUILD_LIST=core,java,imgcodec,video,videoio,feature2d,flann,calib3d,objdetect,dnn,dnn_superres,dnn_objdetect,superres,face,text,cudev .. 
+-D BUILD_LIST=core,java,imgcodec,video,videoio,feature2d,flann,calib3d,objdetect,dnn,dnn_superres,dnn_objdetect,superres,face,text,tracking,cudev .. 
