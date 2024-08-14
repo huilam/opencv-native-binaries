@@ -3,10 +3,10 @@
 install homebrew from https://brew.sh/
 
 # Build dependencies 
-brew install wget curl unzip
-brew install cmake pkg-config python3
-brew install ant openjdk
-brew install libdc1394
+brew install wget curl unzip <br>
+brew install cmake pkg-config python3 <br>
+brew install ant openjdk <br>
+brew install libdc1394 <br>
 
 # Optional OpenVINO
 brew install openvino
@@ -18,8 +18,6 @@ brew install ffmpeg
 brew install gstreamer
 
 # Java Build Environment
-export JAVA_HOME=\`/usr/libexec/java_home -v 11\` 
-
-export ANT_HOME=\`readlink -f $(which ant) | sed "s:/bin/ant::"\` 
-
+export JAVA_HOME=\`/usr/libexec/java_home -v 11\` <br>
+export ANT_HOME=\`readlink -f $(which ant) | sed "s:/bin/ant::"\` <br>
 export PATH=$PATH:$ANT_HOME/bin:$JAVA_HOME/bin 
