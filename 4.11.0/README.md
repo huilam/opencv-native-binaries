@@ -2,7 +2,7 @@
 - [Debian & Ubuntu](./dep-debian.md)
 - [MacOS](./dep-macos.md)
 
-# Opencv 4.10.0
+# Opencv 4.11.0
 cmake \\\
 -D CMAKE_BUILD_TYPE=RELEASE \\\
 -D BUILD_SHARED_LIBS=OFF \\\
